@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Card from '../Card';
-import Alert from '../Alert';
+import API from '../utils/API';
+import Card from '../components/Card';
+import Alert from '../components/Alert';
 
 class Discover extends Component {
   state = {

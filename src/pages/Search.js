@@ -19,11 +19,11 @@ class Search extends Component {
       .catch(err => console.log(err));
   }
 
-  handleInputChange(e) {
+  handleInputChange = e => {
     this.setState({ search: e.target.value });
   }
 
-  handleFormSubmit(e) {
+  handleFormSubmit = e => {
     e.preventDefault();
     API.getDogsOfBreed()
       .then(res => {
